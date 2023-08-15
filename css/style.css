@@ -1,0 +1,180 @@
+
+body{
+    background-color: #1E202B;
+    color:#bfc1c8;
+}
+
+
+nav .navbar-brand,
+nav .navbar-brand:hover{
+    color: white;
+}
+
+nav .information-nav{
+    font-size: 15px;
+}
+
+nav .information-nav small{
+    font-size: 11px;
+    color: rgb(191, 193, 200);
+}
+
+nav .navbar-nav .nav-link.active{
+    color: rgb(0, 154, 216);
+    border:2px solid rgb(0, 154, 216);
+    border-radius: 30px;
+    padding: 4px 25px;
+}
+
+nav .nav-link:focus,
+nav .nav-link{
+    color: white;
+    padding: 4px 25px !important;
+    border: 2px solid transparent;
+    border-radius: 30px;
+}
+
+nav .nav-link:hover{
+    color: rgb(0, 154, 216);
+    border: 2px solid rgb(0, 154, 216);
+}
+
+nav .nav-link:focus{
+    outline: thin dotted;
+    box-shadow: none;
+}
+
+nav .navbar-toggler {
+  border: none;
+}
+
+nav .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+                    /* ============================================================ */
+
+.main{
+    background-image: url('../imgs/bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    padding: 70px 0;
+}
+
+#footer form input,
+#footer form input:focus,
+.main form input,
+.main form input:focus{
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+    border: none;
+    box-shadow: none;
+}
+
+#footer form input::placeholder,
+.main form input::placeholder{
+    color:#bfc1c8;
+    font-size: 15px;
+}
+
+.main form button{
+    background: #009ad8;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+}
+
+#footer form button:hover,
+.main form button:hover{
+    background: #009ad8;
+}
+
+                    /* ============================================================ */
+
+.table-row{
+    background: #323544;
+}
+
+.whether{
+    margin-top: -170px;
+    margin-bottom: 50px;
+}
+
+.forcast-header{
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.forcast-body{
+    padding: 30px 20px;
+}
+
+.forcast-body .degree{
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 700;
+}
+
+.forcast-body .degree .number{
+    font-size: 4rem;
+    margin-right: 10px;
+}
+
+.forcast-body .custom{
+    color: #009ad8;
+    margin: 20px 0;
+}
+
+#forcast{
+    background-color: #262936;
+    padding-bottom: 75px;
+}
+
+                /* ============================================================ */
+
+footer{
+    background: #262936;
+    padding: 50px 0;
+}
+
+#footer form button{
+    background: #009ad8;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 10px 20px;
+}
+
+.social-icons .icon{
+    width: 40px;
+    height: 40px;
+    background: #1e202b;
+    transition: all 0.2s;
+}
+
+.social-icons .icon a{
+    color: #009ad8;
+}
+
+.social-icons .icon:hover a{
+    color: white;
+}
+
+
+.social-icons .icon:hover{
+    background: #009ad8;
+}
+
+
+
+@media screen and (max-width:992px){
+    #forcast{
+        padding-bottom: 0;
+    }
+}

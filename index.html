@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./imgs/1779940.png" type="image/x-icon">
+        <title>Weather</title>
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg bg-transparent p-4">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./imgs/logo@2x.png" alt="Logo" width="64"
+                        height="36" class="me-3">
+                    <div class="information-nav">
+                        <p class="my-0 fw-bold">Weather</p>
+                        <small class="my-0">tagline goes here</small>
+                    </div>
+
+                </a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Live Cameras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="main">
+            <div class="container">
+                <form class="form-group mb-md-5 position-relative"
+                    onsubmit="return false">
+                    <input id="search" type="text"
+                        class="form-control rounded-5"
+                        placeholder="Find your location...">
+                    <button id="btnFind" class="btn position-absolute text-white rounded-5">Find</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container whether">
+            <div class="row table-row gx-0 mb-5 rounded-3">
+
+                <div class="col-lg-4">
+                    <div class="forcast-today">
+
+                        <div
+                            class="forcast-header d-flex justify-content-between align-items-center">
+                            <div class="day">Saturday</div>
+                            <div class="date">
+                                <span class="dayDate">12</span>
+                                <span class="month">novamber</span>
+                            </div>
+
+                        </div>
+
+                        <div class="forcast-body">
+
+                            <div class="location">Cairo</div>
+
+                            <div
+                                class="degree d-flex justify-content-center align-items-center">
+
+                                <div class="number">
+                                    <span class="number-inner">29</span><sup>o</sup>c
+                                </div>
+
+                                <div class="forcast-icon pt-4">
+                                    <img src="./imgs/116.png" alt="photo"
+                                        width="100">
+                                </div>
+
+                            </div>
+
+                            <div class="custom">Partly cloudy</div>
+
+                            <div
+                                class="forcast-information d-flex align-items-center">
+
+                                <div
+                                    class="first me-3 d-flex align-items-center">
+                                    <img src="./imgs/icon-umberella.png"
+                                        alt="img">
+                                    <span class="ms-2">20%</span>
+                                </div>
+
+                                <div
+                                    class="second me-3 d-flex align-items-center">
+                                    <img src="./imgs/icon-wind.png" alt="img">
+                                    <span class="ms-2">18km/h</span>
+                                </div>
+
+                                <div
+                                    class="third me-3 d-flex align-items-center">
+                                    <img src="./imgs/icon-compass.png" alt="img">
+                                    <span class="ms-2">East</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="forcast text-center" id="forcast">
+
+                        <div class="forcast-header">
+                            <div class="day">Sunday</div>
+                        </div>
+
+                        <div class="forcast-body">
+
+                            <div class="forcast-icon">
+                                <img src="./imgs/113.png" alt="photo">
+                            </div>
+
+                            <div class="degree">
+                                <span>39.8</span><sup>o</sup>c
+                            </div>
+
+                            <small>
+                                <span>24.4 </span><sup>o</sup>
+                            </small>
+
+                            <div class="custom">Sunny</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="forcast text-center">
+                        <div class="forcast-header">
+                            <div class="day">Monday</div>
+                        </div>
+
+                        <div class="forcast-body">
+
+                            <div class="forcast-icon">
+                                <img src="./imgs/113.png" alt="photo">
+                            </div>
+
+                            <div class="degree">
+                                <span>40.1</span><sup>o</sup>c
+                            </div>
+
+                            <small>
+                                <span>24.8</span><sup>o</sup>
+                            </small>
+
+                            <div class="custom">Sunny</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <form class="form-group mb-3 position-relative"
+                            onsubmit="return false">
+                            <input type="text" class="form-control rounded-5"
+                                placeholder="Enter your email to subscribe...">
+                            <button class="btn position-absolute text-white rounded-5">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1 pt-lg-3 mb-3">
+                        <div class="social-icons d-flex justify-content-center align-items-center">
+
+                            <div class="icon me-1 rounded-circle d-flex justify-content-center align-items-center">
+                                <a href="">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </div>
+
+                            <div class="icon mx-1 rounded-circle d-flex justify-content-center align-items-center">
+                                <a href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </div>
+
+                            <div class="icon mx-1 rounded-circle d-flex justify-content-center align-items-center">
+                                <a href="">
+                                    <i class="fa-brands fa-google-plus-g"></i>
+                                </a>
+                            </div>
+
+                            <div class="icon mx-1 rounded-circle d-flex justify-content-center align-items-center">
+                                <a href="">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </a>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+
+        </footer>
+
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
